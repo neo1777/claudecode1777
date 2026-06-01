@@ -5,8 +5,19 @@
   "gateway": "effa6eb4-61ac-42ac-a214-f1fac080d81b (NotebookLM MCP)",
   "output": "file strutturato nel repo + source finale nel masterIndex1777",
   "total_notebooks": 48,
-  "done": ["eb1f871b", "9b1dafe8", "b152146c", "4d21092b", "dbd1d848", "51efe327", "42a71b95", "c59171c2", "7f8aa086", "8e2a2294", "6f8dbb0c"],
-  "note": "Subagent wave 1+2 (14 agenti) ha colpito session-limit (reset 3am UTC) e non ha scritto file. Parent (Opus) prosegue a mano + rilancio agenti.",
+  "files_present": "48/48 (un file per notebook in notebooks/)",
+  "voci_totali": 850,
+  "stato": "copertura quasi completa; buchi residui bloccati dal downtime 502 del gateway NotebookLM (origine Cloudflare giù), ritentabili quando torna su",
+  "retry_quando_gateway_torna": {
+    "regola": "USARE SOLO il gateway NotebookLM (source_get_content). MAI WebFetch/WebSearch: la fonte è il contenuto indicizzato in NotebookLM, non un re-fetch web.",
+    "86e51777-mapazzone3": "22/22 da leggere (file con 0 voci reali)",
+    "09fdb39c-mapazzone2": "13/45 mancanti (32 già lette)",
+    "15779ae3-Ultraplan": "22/50 mancanti — source_id: 2a4a4e76,1f2460d2,0a67ff8b,303f9716,0d925592,287bef16,59dbc380,5988aad3,2ac49eef,8e4a3fe6,13b371e0,870100cd,a5b0faa9,13d03b88,95f58628,f1e73ea7,51fa063e,db8593d6,4bc7b734,c9d1ad0f,dd183b8f,391d88a6",
+    "b1480d25-Dagstuhl": "18/58 mancanti (40 già lette; 18 marcate [non letto: API error])",
+    "5c9588e1-Graphify-Project-Analysis": "13/13 da ri-verificare alla fonte (versione attuale ricostruita da summary, non verificata)",
+    "37bc2e19-PROJECT1777": "da ricontare: l'agente dichiara 94 voci ma grep ^### conta 65 — verificare formattazione/completezza"
+  },
+  "note_storiche": "Subagent wave 1 (session-limit, reset 3am UTC) a vuoto. Wave 2 (12 agenti) ha coperto la maggior parte. Retry serializzati dal parent per i buchi da rate-limit; poi il gateway è andato in 502 persistente.",
   "notebooks": [
     {"id": "eb1f871b-d778-4bd6-b2a6-5ca25f6a445e", "title": "masterIndex1777", "sources": 1, "status": "pending"},
     {"id": "9b1dafe8-dce0-448b-a5a8-708bd9757459", "title": "create1777 — fucina, verbali e domande", "sources": 5, "status": "pending"},
