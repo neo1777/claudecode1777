@@ -465,6 +465,178 @@
 
 ---
 
+> Le voci seguenti sono state lette al sorgente (source_get_content, UUID completo) per colmare le fonti non ancora coperte.
+
+---
+
+### 00_guida_costruire_un_project.md
+- **source_id:** f08a646f-4dc1-4ff4-9c1e-93d1537560d6  ·  **tipo:** text
+- **sostanza:** Documento portante del kit PROJECT1777: come costruire un Project Claude.ai persistente per un lavoro qualunque. Spiega quando conviene (lavoro con continuità) vs no, il modello "corpo/bracci" (invariante universale + moduli di dominio), il metodo in 8 fasi (Fase 0 lavoro reale → Fase 7 raffinamento), i principi (verifica mai a memoria, fatti vs inferenze, niente compiacenza, 360°→fuoco, file-ponte) e l'inventario del kit.
+- **keyword/entità:** PROJECT1777 · kit · corpo/bracci · 8 fasi · skill · prompt-madre · metaprompt · file-ponte · caso-studio · principi di metodo
+
+---
+
+### 01-prd-mvp.md
+- **source_id:** e9eff001-a4da-4a7d-8969-f997f14b3af2  ·  **tipo:** text
+- **sostanza:** PRD dell'MVP di una piattaforma di peer-review "overlay" per articoli tecnici AI/workflow. Definisce scopo, problema (manca review strutturata nella grey literature tecnica), 4 ruoli (Autore, Revisore, Editor, Lettore), scope in/out, workflow editoriale (proposed→under review→reviewed...), rubriche di valutazione a 7 dimensioni, user stories e criteri di successo.
+- **keyword/entità:** PRD · MVP · peer-review · overlay platform · ruoli · workflow editoriale · rubriche · score · reputazione · articoli tecnici AI
+
+---
+
+### 01_base_processo_architettura_lezioni.md
+- **source_id:** a2590d47-34b6-4339-9d26-0aac68de1998  ·  **tipo:** text
+- **sostanza:** Artefatto Punto 1 del kit: fondazione da cui derivano guida e scheletri. Parte A = processo astratto in 8 fasi con riscontri reali in OSS1777 (issue #919, #934, PR #942). Parte B = architettura corpo/bracci con il "test del confine". Parte C = registro di 12 lezioni reali con fonte (versione graphify 0.8.8 vs 0.8.5, limite 1024 char description skill, ZIP con cartella, file-ponte ecc.).
+- **keyword/entità:** PROJECT1777 · processo 8 fasi · corpo/bracci · test del confine · registro lezioni · OSS1777 · issue #919 · #934 · PR #942 · METAPROMPT_TEMPLATE
+
+---
+
+### 02-ux-ui-spec.md
+- **source_id:** 57ba4737-0ad2-4c09-aacd-7fc7ce674781  ·  **tipo:** text
+- **sostanza:** Specifica UX/UI multipiattaforma dell'MVP peer-review. Principi (affidabilità, rigore, no estetica social), default Italia/italiano e temi light/dark/system. Architettura informativa (Home/Discover, Search, Submit, Review Queue, Article Workspace, Review Composer, Profiles, Editor Console, Settings), navigazione per mobile (bottom nav)/tablet-desktop (sidebar)/web, componenti chiave (card, badge stato, score chips, timeline versioni) e stati interfaccia.
+- **keyword/entità:** UX/UI spec · multipiattaforma · Article Workspace · Review Composer · badge stato · bottom nav · sidebar · empty state · localizzazione Italia
+
+---
+
+### 03-functional-behavior-spec.md
+- **source_id:** 04a37c73-b0d9-4230-b064-d3b6876b5915  ·  **tipo:** text
+- **sostanza:** Specifica del comportamento funzionale della demo MVP: regola reale vs simulato (core operativo, avanzato simulato ma "wired-ready"). Descrive 6 flussi (import articolo da URL, submission guidata, review queue, composizione review per rubriche, risposta autore/nuova versione, decisione editoriale), bottoni e azioni con esiti visibili, funzioni simulabili (matching revisori, AI hints) e stati trasversali obbligatori (loading/empty/error/permission).
+- **keyword/entità:** functional spec · reale vs simulato · flussi · import URL · review composer · stati UI · decisione editoriale · demo high-fidelity
+
+---
+
+### 03_template_pro.md
+- **source_id:** 6df34cef-69b8-4c1c-be20-850307694c0e  ·  **tipo:** text
+- **sostanza:** Versione inglese "Pro Edition" del template di ricerca Perplexity Pro. Companion a template gratuito e articolo Medium. Contiene 3 case study elaborati, troubleshooting (7 failure mode), pattern avanzati (knowledge graph multi-sessione, cross-research synthesis, anti-demotion discipline), cost optimization, adattamento per scala e riferimento API completo (preset advanced-deep-research, max_output_tokens 128000, reasoning high, web_search+fetch_url).
+- **keyword/entità:** Perplexity Pro · advanced-deep-research · template ricerca · case study · anti-demotion · knowledge graph · API config · Regime A/B · cost optimization
+
+---
+
+### 04-integration-readiness-spec.md
+- **source_id:** 46a1521e-8ec7-4d6f-bd2d-286de1653a7d  ·  **tipo:** text
+- **sostanza:** Specifica di "integration readiness" dell'MVP: punti di aggancio da esporre senza fissare lo stack. Domini di integrazione (identity esterna, import contenuti URL, workflow editoriali a eventi, reputation/scoring, browser extension). Modello dati concettuale minimo (User, Article, ArticleVersion, Review, Rating, ScoreSnapshot, WorkflowEvent), eventi applicativi standardizzati (ArticleImported, ReviewSubmitted...) e integrazioni open data Italia di contesto.
+- **keyword/entità:** integration readiness · modello dati · WorkflowEvent · browser extension · reputation · open data Italia · eventi applicativi · overlay model
+
+---
+
+### 05-master-prompt-companion.md
+- **source_id:** 50ae60f0-6dbc-42eb-915f-42b7d6dac64d  ·  **tipo:** text
+- **sostanza:** Companion operativo al master prompt per generare l'app MVP multipiattaforma. Vincola il generatore: identità prodotto (piattaforma overlay di peer-review, non social/blog), risultato atteso (demo high-fidelity con tutte pagine/stati/temi/localizzazione), vincoli (Italia default, EN secondaria, temi system), sezioni obbligatorie, funzioni reali vs simulate e criterio finale di accettazione.
+- **keyword/entità:** master prompt · companion · generazione app · MVP · multipiattaforma · sezioni obbligatorie · reale vs simulato · criterio di accettazione
+
+---
+
+### 05_articolo_medium_IT.md
+- **source_id:** b563bbb7-42a0-4ecc-96a5-31b7d1c403b4  ·  **tipo:** text
+- **sostanza:** Articolo Medium in italiano "Ho speso $60 su Perplexity Pro... avrei pagato un consulente $15.000+". Racconta un progetto editoriale di 6 mesi/20 sessioni: workflow di ricerca in 4 step (passata esplorativa, audit metodico, identifica buchi, ricerca di chiusura), 6 principi epistemologici (neutralità esplorativa, citazioni primarie, pattern emergenti, disclaimer, audit categorizzato 1-5, anti-derubricazione), numeri trasparenti e setup API esatto.
+- **keyword/entità:** Medium IT · Perplexity Pro · workflow 4 step · anti-derubricazione · finding categoria 5 · citazioni primarie · $60 vs $15k · advanced-deep-research
+
+---
+
+### 06-ai-test-debug-smoke-final.md
+- **source_id:** 21367c2d-7d47-4ca6-8ac8-3d99c1713f7f  ·  **tipo:** text
+- **sostanza:** Framework di verifica/test/debug/smoke per l'MVP, orchestrabile da un agente AI. Definisce 6 livelli di test (static/code quality, unit, integration, smoke, end-to-end, regression), checklist smoke S1-S12, tassonomia bug per severità (P0 crash/broken path → P3 cosmetic), test di stato/workflow editoriale, test UI multipiattaforma, audit qualità codice, gate di rilascio G1-G7 e prompt operativo per AI tester.
+- **keyword/entità:** test framework · smoke test · agente AI tester · livelli di test · severità bug P0-P3 · gate di rilascio · invalid state · regression · qualità codice
+
+---
+
+### 07_template_pro_IT.md
+- **source_id:** 3c557224-3461-4b97-a5ec-f68c0ea8abd5  ·  **tipo:** text
+- **sostanza:** Versione italiana completa della "Edizione Pro" del template di ricerca Perplexity Pro. Contenuto equivalente a 03_template_pro.md (EN): 3 casi di studio, guida troubleshooting (7 modalità di fallimento), pattern avanzati (knowledge graph multi-sessione, sintesi cross-research, disciplina anti-derubricazione con 3 esempi), ottimizzazione costi, adattamento a scale diverse, riferimento configurazione API e Parte 7 sui Regimi A/B.
+- **keyword/entità:** Perplexity Pro · Edizione Pro IT · casi di studio · troubleshooting · anti-derubricazione · Regime A/B · API advanced-deep-research · ottimizzazione costi
+
+---
+
+### Analisi Strategica: Acquisizione di Tecnologie di Registrazione Audio Intelligenti (2026)
+- **source_id:** 61b76fd7-9b78-461f-8dca-2f50ee5bd70d  ·  **tipo:** text
+- **sostanza:** Report strategico 2026 sull'acquisizione di tecnologie di registrazione audio intelligenti. Tassonomia per form factor (registratori digitali, mini/spy, wearable AI note-taker, software meeting, app smartphone, lifelogging desktop, form factor futuristici), modelli economici CAPEX vs OPEX ("razor-and-blade"), dilemma cloud-first vs local-first con voice masking (Plaud, BOYA), sensori VPU/Quad-MEMS e 3 profili decisionali di procurement.
+- **keyword/entità:** registrazione audio 2026 · wearable AI · CAPEX/OPEX · cloud vs local · voice masking · Plaud · BOYA Notra · Rewind.ai · Whisper · VPU · procurement
+
+---
+
+### Architettura della Conoscenza: Il Metodo PROJECT1777
+- **source_id:** d5fc4745-9509-4f5f-8827-3a2903b6b147  ·  **tipo:** text
+- **sostanza:** Risposta NotebookLM che indicizza gli 8 file del "nucleo metodologico" (Bussola/Motore) del sistema PROJECT1777 e ne descrive il ruolo: metodo ontologico, protocollo Auditor di Verità, guida operativa caos→struttura, framework densità semantica/valore economico, manuale Auditor universale, manuale correlazione ontologica Graphify/Marzio1777, mappa ontologica, chat_rename. Inquadra i file come istruzioni operative e mappe strategiche.
+- **keyword/entità:** PROJECT1777 · architettura della conoscenza · metodo ontologico · Auditor di Verità · VEP · densità semantica · Motore/Diario/Bussola · 8 file nucleo
+
+---
+
+### Architettura della Conoscenza_ Il Metodo Ontologico per NotebookLM.md
+- **source_id:** c5a2105d-1470-4fe4-b847-8697adb9efef  ·  **tipo:** text
+- **sostanza:** Versione definitiva del Metodo Ontologico per NotebookLM come framework di Architettura della Conoscenza. Trasforma NotebookLM in "Auditor di Verità". Contiene il core engine "Virgin Entry Prompt (VEP) Amplificato" (tassonomia funzionale Motore/Diario/Prodotto/Bussola/Anomalia + Pezzo di Ferro/Trasparenza Totale/Punto di Rottura), workflow 4 step, casi d'uso degli artefatti NotebookLM, checklist del senso (Regime A/B, esiste una skill?) e gestione falsa completezza.
+- **keyword/entità:** metodo ontologico · NotebookLM · VEP amplificato · Auditor di Verità · tassonomia funzionale · densità semantica · Regime A/B · falsa completezza · finding Cat 5
+
+---
+
+### Architettura della Conoscenza_ Protocollo Auditor di Verità.md
+- **source_id:** 2a1c00d9-f3dc-46f1-bccb-f6c45522095e  ·  **tipo:** text
+- **sostanza:** Descrive la finalizzazione della mappa mentale del corpus (61 file sorgente, titoli trattati come placeholder) e il metodo agnostico replicabile: 4 artefatti (Manuale Correlazione Ontologica, Stratigrafia/Infografica, Skill Flashcards, Manuale Metodologico Universale), protocollo di bootstrapping ricorsivo con VEP, workflow 4 step, distinzione Regime A/B, "Dignità di Prodotto" come criterio finale ed esempi di tracciamento integrità corpus.
+- **keyword/entità:** Auditor di Verità · mappa mentale · 61 file · bootstrapping ricorsivo · VEP · ridenominazione ontologica · Regime A/B · Dignità di Prodotto · verify before modify
+
+---
+
+### BRIEFING_GRAPHIFY_ISSUE(1).md
+- **source_id:** e6ebf5b5-6f75-4a18-b58e-a4e613003bf5  ·  **tipo:** text
+- **sostanza:** Documento di briefing per la sessione di scrittura della prima issue open-source su graphify. Presenta Neo/neo1777 (background, stack React/TS/Vite/Firebase), il progetto marzio1777, il tool graphify v8 di safishamsi, il problema concreto (Community 0 con 86 nodi, cohesion 0.05, due super-hub ui/index.tsx deg 44 e useRBAC() deg 32), la due-diligence su cluster.py, le 4 feature request candidate e gli obiettivi della chat (imparare il pattern issue→PR).
+- **keyword/entità:** briefing · issue open-source · graphify v8 · neo1777 · marzio1777 · Community 0 · super-hub · cluster.py · --exclude-hubs · Leiden · feature request
+
+---
+
+### BRIEFING_GRAPHIFY_ISSUE.md
+- **source_id:** 98c8a442-9264-4dfc-bbf2-a6a6ac881182  ·  **tipo:** text
+- **sostanza:** Duplicato funzionale di BRIEFING_GRAPHIFY_ISSUE(1).md (stesso char_count, contenuto identico): documento di contesto per la prima issue OSS su graphify. Presenta Neo, marzio1777, graphify v8, il problema Community 0 (86 nodi, cohesion 0.05, super-hub ui/index.tsx e useRBAC()), la due-diligence su cluster.py, le 4 feature request e gli obiettivi pedagogici della sessione.
+- **keyword/entità:** briefing · duplicato · issue graphify · Community 0 · super-hub · cluster.py · feature request · neo1777 · marzio1777
+
+---
+
+### BRIEF_skill_contributo_oss.md
+- **source_id:** 76c61f17-f67b-416e-83bc-4c41e541a83e  ·  **tipo:** text
+- **sostanza:** Brief di costruzione della skill "contributo-oss", prodotto dopo la valutazione che ha individuato una sola skill candidata (issue+PR insieme). Definisce identità skill, descrizione YAML di attivazione, forma (metodo non runbook), principio di fondo (un contributo vale per il lavoro che risparmia al maintainer), 7 principi candidati con fonti reali (#919/#934/#942), arco tipico, cosa evitare, calibrazione su Neo e reference da includere. Nota di igiene: PAT GitHub in chiaro da revocare.
+- **keyword/entità:** contributo-oss · skill · brief costruzione · issue-diagnosi · PR review-friendly · galateo maintainer · 7 principi · #919/#934/#942 · PAT da revocare
+
+---
+
+### CHANGELOG.md - safishamsi/graphify - GitHub
+- **source_id:** 59ee9f73-8209-4a27-bdb0-df5c13b9ae2d  ·  **tipo:** url
+- **sostanza:** [oversized ~62k char — non leggibile in un singolo get_content] CHANGELOG ufficiale del repo safishamsi/graphify su GitHub. Documenta la storia delle release con feature, fix e breaking change. Coerente con l'altra copia CHANGELOG già indicizzata: traccia l'evoluzione dal proof-of-concept iniziale alle versioni mature (cross-file call resolution, wiki, Mermaid, MCP, clustering, multi-platform).
+- **keyword/entità:** CHANGELOG · graphify · release history · GitHub · oversized · feature roadmap · safishamsi
+
+---
+
+### Chat Claude — risoluzione issue Graphify (briefing) [copia 2]
+- **source_id:** df00f257-aff5-4324-ad82-e4dfdf77c0e9  ·  **tipo:** url
+- **sostanza:** Trascrizione Claude share (claude.ai/share/6b95b100) della sessione in cui Neo, partendo dal BRIEFING_GRAPHIFY_ISSUE, impara a scrivere la prima issue open-source. Claude spiega cos'è una issue ben scritta (5 criteri, struttura a 6 sezioni, tono), il modello mentale GitHub (repo/fork/issue/PR, upstream/origin), il workflow issue→PR, e fa la ricognizione live del repo graphify (v0.8.8, 48.6k star, nessun duplicato, cluster.py non verificabile via fetch).
+- **keyword/entità:** Claude share · issue open-source · graphify v0.8.8 · fork/PR · upstream/origin · soft offer · ricognizione repo · cluster.py · first-time contributor
+
+---
+
+### Claude Code Complete Guide 2026: From Zero to Hero
+- **source_id:** 3043a604-9f8f-4ea5-93f9-e8814389e0a0  ·  **tipo:** url
+- **sostanza:** URL claude-world.com bloccata da Cloudflare ("Just a moment... Performing security verification", Ray ID a005220e). Contenuto reale non recuperato: la fonte indicizzata è solo la challenge page anti-bot. Tema dichiarato dal titolo: guida completa a Claude Code 2026.
+- **keyword/entità:** Claude Code · guida 2026 · Cloudflare blocked · claude-world.com · contenuto non recuperato
+
+---
+
+### Claude Code MCP Servers & Plugins: The Complete 2026 Guide - Clarista
+- **source_id:** aee2b75b-1d11-4bdf-88cd-fcf0c0a17424  ·  **tipo:** url
+- **sostanza:** Guida Clarista 2026 su MCP server e plugin per Claude Code. Spiega cos'è MCP (standard Anthropic, "USB for AI": Resources/Tools/Prompts), cos'è un plugin (bundle di MCP+slash command+skill), come installare server e plugin via CLI, i server più utili 2026 (github, filesystem, postgres, slack, jira...), come costruire un server, i rischi enterprise (permissions sprawl, audit blindness, supply chain) e i punti di estensione (SDK, hooks, router, subagents).
+- **keyword/entità:** Claude Code · MCP · plugin · Clarista · Resources/Tools/Prompts · marketplace · enterprise gateway · hooks · subagents · slash command
+
+---
+
+### Closing the Context Gap: Why MCP + Skills Works - Agentic AI Foundation (AAIF)
+- **source_id:** ad049ca8-99ba-4f33-bc70-90ab5af01d5e  ·  **tipo:** url
+- **sostanza:** Articolo AAIF sul keynote di Pedro Rodrigues (Supabase) a MCP Dev Summit NA 2026. Tesi: MCP e Agent Skills non sono concorrenti ma le due metà di un agente — MCP dà capacità (tools), le Skill danno conoscenza procedurale (context), colmando il "Context Gap". Case study RLS security_invoker, benchmark (MCP+Skills = 100% success su task security-critical vs MCP-only che ignora search_docs), progressive disclosure contro il token bloat.
+- **keyword/entità:** MCP + Skills · Context Gap · Supabase · Pedro Rodrigues · SKILL.md · RLS security_invoker · progressive disclosure · benchmark · token bloat
+
+---
+
+### Dalla Massa Disordinata alla Struttura_ Guida Operativa al Metodo Ontologico in NotebookLM.md
+- **source_id:** 9572576b-b034-4015-933b-f19f54322545  ·  **tipo:** text
+- **sostanza:** Guida operativa al Metodo Ontologico in NotebookLM (filosofia Project OSS1777, discendenza Perplexity Pro). Elevare NotebookLM ad "Auditor di Verità": cambio di paradigma dallo slop alla conoscenza densa, ricognizione ontologica col Virgin Entry Prompt (etichette Motore/Diario/Prodotto/Bussola/Anomalia), workflow in 4 step (passata esplorativa, audit, identificazione buchi, chiusura), guida agli artefatti NotebookLM e checklist del senso (Regime A/B, esiste una skill, dignità di prodotto).
+- **keyword/entità:** metodo ontologico · NotebookLM · Auditor di Verità · Virgin Entry Prompt · slop vs densità · workflow 4 step · Regime A/B · finding categoria 5 · falsa completezza
+
+---
+
 > **RIEPILOGO ANOMALIE**
 >
 > - **Duplicati confermati (4 coppie):** agente Dart (cfc996d4/bc50377e) · registratore vocale (c8d9e11d/a2878069) · prompt bidirezionalità palantir (e473a987/1fa804b9) · claude-share analisi grafo (0dbaecb9/4d7549a7) · Mappa id [1]/[2] (0bf5a5a6/258d40de)
