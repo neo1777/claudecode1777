@@ -165,106 +165,106 @@
 
 ### EPISTEMIC RESILIENCE (ResearchGate)
 - **source_id:** b41f69d9 · **tipo:** url
-- **sostanza:** Accesso negato — Cloudflare error 1020 (ResearchGate). Contenuto non disponibile. Dal titolo: paper su resilienza epistemica probabilmente correlato ad analisi delle minacce o bias cognitivi nell'intelligence.
-- **keyword/entità:** ResearchGate · accesso negato · resilienza epistemica
+- **sostanza:** [non letto: API error] — Accesso negato confermato a 2 tentativi (Cloudflare error 1020, ResearchGate, User-Agent Google-NotebookLM bloccato, pub. 404164084). Titolo: "Epistemic Resilience and Weak Signal Analysis in Frontier AI Systems: A Protocol for Navigating Asymmetric Information Environments".
+- **keyword/entità:** ResearchGate · Cloudflare 1020 · resilienza epistemica · weak signal · frontier AI
 
 ---
 
 ### Hybrid Threat Assessment (ResearchGate)
 - **source_id:** cdce8557 · **tipo:** url
-- **sostanza:** Accesso negato — Cloudflare error 1020 (ResearchGate). Contenuto non disponibile. Dal titolo: paper su metodologie di valutazione delle minacce ibride, probabilmente correlato alle SATs e all'analisi dell'intelligence.
-- **keyword/entità:** ResearchGate · accesso negato · minacce ibride · threat assessment
+- **sostanza:** [non letto: API error] — Accesso negato confermato a 2 tentativi (Cloudflare error 1020, ResearchGate, pub. 399183685). Titolo: "Hybrid Threat Assessment Through Security Analytics: A Clark–Heuer Integrative Model" — modello che integra il framework di Clark con l'ACH di Heuer per la valutazione delle minacce ibride.
+- **keyword/entità:** ResearchGate · Cloudflare 1020 · minacce ibride · Clark-Heuer · ACH
 
 ---
 
 ### Effects of Task Structure and Confirmation Bias — PMC
 - **source_id:** 76bd3778 · **tipo:** url
-- **sostanza:** Accesso bloccato — reCAPTCHA PMC. Contenuto non disponibile. Dal titolo: studio sugli effetti della struttura dei task e del confirmation bias, probabilmente ricerca empirica su processi cognitivi in contesti analitici.
-- **keyword/entità:** PMC · accesso bloccato · confirmation bias · task structure
+- **sostanza:** [non letto: API error] — Accesso bloccato confermato a 2 tentativi (reCAPTCHA "Checking your browser" su pmc.ncbi.nlm.nih.gov, articolo PMC11169332). Dal titolo: studio empirico sugli effetti della struttura dei task e del confirmation bias nella valutazione di ipotesi alternative.
+- **keyword/entità:** PMC · reCAPTCHA · accesso bloccato · confirmation bias · task structure · ipotesi alternative
 
 ---
 
 ### Claude Code Ultraplan — Product Hunt
 - **source_id:** 84942e20 · **tipo:** url
-- **sostanza:** Accesso bloccato — Cloudflare (Product Hunt). Contenuto non disponibile. Pagina di lancio di Claude Code Ultraplan su Product Hunt con commenti della community tech.
-- **keyword/entità:** Product Hunt · accesso bloccato · lancio · community
+- **sostanza:** [non letto: API error] — Accesso bloccato confermato a 2 tentativi (Cloudflare "Just a moment..." security verification su producthunt.com). Pagina di lancio di Claude Code Ultraplan su Product Hunt non recuperabile.
+- **keyword/entità:** Product Hunt · Cloudflare challenge · accesso bloccato · lancio
 
 ---
 
 ### Eng Cătălin: Research Works (ResearchGate)
 - **source_id:** cf6d31be · **tipo:** url
-- **sostanza:** Accesso negato — ResearchGate (probabile Cloudflare block). Contenuto non disponibile. Profilo/works di Eng Cătălin su ResearchGate, presumibilmente correlato ai paper su SATs o threat assessment presenti nel notebook.
-- **keyword/entità:** ResearchGate · accesso negato · Eng Cătălin
+- **sostanza:** [non letto: API error] — Accesso negato confermato a 2 tentativi (Cloudflare error 1020, ResearchGate, scientific-contributions/Eng-Catalin-2347930441). Pagina profilo/works dell'autore non recuperabile; presumibilmente correlata ai paper su SATs/threat assessment del notebook.
+- **keyword/entità:** ResearchGate · Cloudflare 1020 · accesso negato · Eng Cătălin
 
 ---
 
 ### LLM-Oriented Information Retrieval — arXiv
 - **source_id:** 2a4a4e76 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Paper arXiv su tecniche di information retrieval orientate agli LLM.
-- **keyword/entità:** arXiv · information retrieval · LLM
+- **sostanza:** Perspective paper arXiv (2605.00505) che sostiene un approccio "denoising-first" all'IR per LLM: a differenza degli umani, gli LLM hanno budget di attenzione limitato e sono vulnerabili al rumore, che causa allucinazioni e fallimenti di reasoning. Propone tassonomia di metodi (controlled indexing, robust retrieval, context assembly, retrieval verification, closed-loop training) e applicazioni a coding agents, memory assistants, deep research.
+- **keyword/entità:** arXiv 2605.00505 · denoising · information retrieval · RAG · evidence density · HKUST
 
 ---
 
 ### Midway Revisited: Detecting Deception
 - **source_id:** 1f2460d2 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Analisi su rilevamento dell'inganno, probabile paper o articolo su cognitive bias o intelligence analysis.
-- **keyword/entità:** deception · detection · intelligence
+- **sostanza:** [non letto: API error] — Accesso negato confermato a 2 tentativi (Cloudflare error 1020, ResearchGate, pub. 2948084). Paper classico (anche su DTIC ADA428173) sul rilevamento dell'inganno tramite Analysis of Competing Hypotheses applicata al caso storico di Midway; non recuperabile via gateway.
+- **keyword/entità:** ResearchGate · Cloudflare 1020 · deception detection · ACH · Midway · intelligence
 
 ---
 
 ### OSINT: The Art of Converting Digital Noise — Arcadia
 - **source_id:** 0a67ff8b · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Articolo Arcadia su OSINT e trasformazione del rumore digitale in intelligence.
-- **keyword/entità:** OSINT · Arcadia · intelligence · digital noise
+- **sostanza:** [non letto: API error] — La pagina indicizzata restituisce "Whoops, that page is gone" (404 Arcadia Company): solo navigazione del sito (servizi investigativi, TSCM, sicurezza) e cookie banner, nessun contenuto dell'articolo OSINT effettivo. Confermato a 2 tentativi.
+- **keyword/entità:** Arcadia Company · 404 · OSINT · digital noise · contenuto non disponibile
 
 ---
 
 ### Open Deep Research — LangChain
 - **source_id:** 303f9716 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Documentazione o articolo LangChain su Open Deep Research.
-- **keyword/entità:** LangChain · Open Deep Research · framework
+- **sostanza:** Blog LangChain (lug 2025) sull'agente open source "Open Deep Research" costruito su LangGraph: processo a 3 fasi (Scope con user clarification + brief generation; Research con supervisor che delega a sub-agenti paralleli a contesto isolato; Write in one-shot). Lezioni chiave: multi-agente solo per task parallelizzabili, isolamento del contesto per sotto-temi, context engineering per contenere il token bloat (Anthropic riporta 15x token vs chat).
+- **keyword/entità:** LangChain · LangGraph · Open Deep Research · supervisor · sub-agenti · context engineering · context clash
 
 ---
 
 ### Plan in the Cloud with Ultraplan — Claude Code Docs
 - **source_id:** 0d925592 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Documentazione ufficiale Anthropic su Ultraplan.
-- **keyword/entità:** Claude Code Docs · Ultraplan · documentazione ufficiale · Anthropic
+- **sostanza:** Documentazione ufficiale Anthropic (code.claude.com) su ultraplan: research preview che richiede Claude Code v2.1.91+. Descrive il workflow — lancio da CLI (/ultraplan, keyword, o da local plan), drafting nel cloud (Claude Code on the web in plan mode), review nel browser con commenti inline/emoji/outline, scelta dell'esecuzione (sul web con PR oppure "teleport" al terminale locale). Indicatori di stato CLI (◇/◆), polling, requisiti GitHub repo, non disponibile su Bedrock/Vertex/Foundry.
+- **keyword/entità:** Claude Code Docs · ultraplan · v2.1.91 · plan mode · teleport · cloud environment · Anthropic
 
 ---
 
 ### STORM Agent Pattern — Agent Patterns Docs
 - **source_id:** 287bef16 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Documentazione Agent Patterns 0.2.0 sul pattern STORM.
-- **keyword/entità:** STORM · Agent Patterns · 0.2.0 · pattern
+- **sostanza:** [non letto: API error] — Sorgente non campionabile via gateway in questa sessione (non riprovata con successo entro i tentativi). Dalla titolazione: documentazione Agent Patterns 0.2.0 che descrive il pattern STORM (multi-perspective question asking per generazione di outline/report).
+- **keyword/entità:** STORM · Agent Patterns · 0.2.0 · pattern · non campionato
 
 ---
 
 ### The Epistemic Landscape of AI Orchestration
 - **source_id:** 59dbc380 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Paper o articolo sul panorama epistemico dell'orchestrazione AI.
-- **keyword/entità:** AI orchestration · epistemic · landscape
+- **sostanza:** Report-sintesi multilivello (text) che fa da "cappello" all'intero notebook: mappa Ultraplan come cloud-native planning (Opus 4.6 in Anthropic CCR, budget 30 min, polling 3s, varianti A/B simple_plan/visual_plan/three_subagents_with_critique, leak npm 31/03/2026 di 512k righe e 44 feature flag tra cui KAIROS e ULTRAPLAN), collega context engineering (context charting, STORM/Co-STORM), failure mode (attention decay, retrieval-utilization gap, pipeline desync, sycophancy/AI psychosis) e resilienza analitica (ACH di Heuer, triage a 3 compartimenti, layout HypRow). Ricco di citazioni incrociate alle altre fonti.
+- **keyword/entità:** orchestrazione AI · cloud-native planning · Opus 4.6 · system prompt leak · context engineering · ACH · epistemic resilience · sintesi
 
 ---
 
 ### The Research Foundations of Context Charting — Contextminds
 - **source_id:** 5988aad3 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Articolo Contextminds sulle basi teoriche del context charting.
-- **keyword/entità:** Contextminds · context charting · research foundations
+- **sostanza:** Articolo accademico Contextminds che fonda teoricamente il "context charting" (metodologia visuale in 6 step: focus question, categorizzazione, brain dump, espansione, riduzione, applicazione). Collega ogni step a tradizioni di ricerca consolidate: concept mapping (Novak & Gowin 1984), ontologie (Gruber 1993), meaningful learning (Ausubel 1968), knowledge graph/semantic web (Berners-Lee 2001), pensiero divergente/convergente (Guilford 1967).
+- **keyword/entità:** Contextminds · context charting · concept mapping · ontologie · knowledge graph · meaningful learning
 
 ---
 
 ### Ultraplan is Here — r/ClaudeAI Reddit
 - **source_id:** 2ac49eef · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Thread Reddit annuncio/discussione del lancio di Ultraplan.
-- **keyword/entità:** Reddit · r/ClaudeAI · lancio · Ultraplan
+- **sostanza:** Thread r/ClaudeAI "Ultraplan is here" (lancio, su CC 2.1.92): la community è confusa/scettica, molte battute su tier futuri (/monsterplan, /godlikeplan). Consensus del TL;DR moderatore: NON è un nuovo tier ma una feature che offloada il planning al cloud, libera il terminale, dà una UI web per commentare il piano, esegue su web (repo GitHub) o rimanda al terminale. Lamentele: brucia token, UI web buggata, link al piano difficile da trovare, problemi con modifiche non committate e timeout 30 min.
+- **keyword/entità:** Reddit · r/ClaudeAI · v2.1.92 · lancio · cloud planning · UI buggata · token burn · 30-min timeout
 
 ---
 
 ### GitHub Issue #44303: Ultraplan Remote Session Unresponsive
 - **source_id:** 8e4a3fe6 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Issue GitHub su sessione remota Ultraplan che diventa non responsiva.
-- **keyword/entità:** GitHub · issue · sessione remota · non responsiva · #44303
+- **sostanza:** Issue GitHub #44303 (CC 2.1.92, chiusa as not planned/stale): una sessione ultraplan remota ben avviata, dopo iterazione estesa sul piano, ha congelato il web client rendendolo non responsivo agli edit; il piano è stato recuperato solo via copy-paste manuale dalla UI. Il primo lancio era andato in timeout "no approval after 30 minutes". 3 duplicati segnalati, parte di un cluster di bug su timeout/freeze delle sessioni remote.
+- **keyword/entità:** GitHub #44303 · sessione remota · web client freeze · 30-min timeout · copy-paste recovery · area:cowork
 
 ---
 
