@@ -270,82 +270,82 @@
 
 ### GitHub Issue #47252: Stream Idle Timeout Errors
 - **source_id:** 13b371e0 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Issue GitHub su errori ripetuti di stream idle timeout in Ultraplan.
-- **keyword/entità:** GitHub · issue · stream idle timeout · #47252
+- **sostanza:** Issue GitHub #47252 (aperta, 21+ partecipanti): ultraplan fallisce ripetutamente con "API Error: Stream idle timeout - partial response received" mentre scrive il piano raffinato; l'approval UI non appare mai. Molti utenti confermano. Fix trovato dalla community (CaptFaraday): aggiungere `CLAUDE_STREAM_IDLE_TIMEOUT_MS: 1800000` in ~/.claude/settings.json per sostituire il default nascosto di 90s — ma il workaround non si applica alla superficie cloud/browser. Variabile reale ma non documentata.
+- **keyword/entità:** GitHub #47252 · stream idle timeout · CLAUDE_STREAM_IDLE_TIMEOUT_MS · 90s default · Opus 4.6/4.7 · workaround community
 
 ---
 
 ### Using Claude Code to Help Me Write — Andrew Wheeler
 - **source_id:** 870100cd · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Post personale di Andrew Wheeler sull'utilizzo di Claude Code per la scrittura.
-- **keyword/entità:** Andrew Wheeler · Claude Code · scrittura · uso personale
+- **sostanza:** Post di Andrew Wheeler (criminologo) su come usa Claude Code per scrivere: ha bozzato il libro "LLMs for Mortals" con Sonnet 4.1 (~$5, ~50% prosa generata, non flaggato da Pangram). Tecniche: scrivere in plain text/markdown, copy-editing con LLM, k-shot con esempi del proprio stile precedenti in context per mimare la voce, outline progressivi, CLAUDE.md con istruzioni ("no emoji", no liste verbose), gestione citazioni via bibtex per evitare hallucinated citations.
+- **keyword/entità:** Andrew Wheeler · Claude Code · scrittura · k-shot · CLAUDE.md · Pangram · bibtex · LLMs for Mortals
 
 ---
 
 ### What Is Claude Code Ultra Plan? — MindStudio
 - **source_id:** a5b0faa9 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Articolo MindStudio esplicativo su Claude Code Ultra Plan.
-- **keyword/entità:** MindStudio · Ultra Plan · spiegazione · Claude Code
+- **sostanza:** Articolo esplicativo MindStudio (apr 2026) su Claude Code Ultra Plan come tier ad alto uso con planning cloud multi-agente: descrive le 4 fasi (decomposizione del problema, esplorazione parallela con sub-agenti read-only, sintesi del piano, esecuzione), quando conviene (codebase grandi, cambi cross-cutting, requisiti incerti, alto costo dell'errore) e quando no (task piccoli, greenfield, prototipazione). Forte taglio promozionale verso il prodotto MindStudio/Remy per orchestrare CC in workflow.
+- **keyword/entità:** MindStudio · Ultra Plan · multi-agente · 4 fasi · sub-agenti paralleli · CLAUDE.md · promo Remy
 
 ---
 
 ### GitHub Issue: /ultraplan Attaches to Ancestor Git Repo
 - **source_id:** 13d03b88 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Bug report GitHub su Ultraplan che si aggancia al repository git antenato in strutture nested.
-- **keyword/entità:** GitHub · bug · nested git · ancestor · repository
+- **sostanza:** Issue GitHub #46302 (aperta, CC 2.1.100, macOS, has-repro): invocando /ultraplan da un repo git nested, ultraplan carica nel cloud un repo ANTENATO invece di quello in CWD, pur restituendo `git rev-parse --show-toplevel` il repo corretto. Silenzioso e deterministico già al primo lancio (distinto dai bug di stale-session). L'attaccamento errato è load-bearing anche per l'esecuzione: Claude prende decisioni strutturali (es. creare book-tracker/) basate sul .gitignore dell'antenato sbagliato. Segnala anche desync terminale/browser/backend.
+- **keyword/entità:** GitHub #46302 · nested git · ancestor repo · rev-parse --show-toplevel · workspace resolution · macOS
 
 ---
 
 ### GitHub Issue #46883: Background Tasks Require Git Repository
 - **source_id:** 95f58628 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Bug report su task in background Ultraplan che richiedono un repository git per funzionare.
-- **keyword/entità:** GitHub · bug · background tasks · git repository · #46883
+- **sostanza:** Issue GitHub #46883 (CC 2.1.104, macOS, chiusa come duplicato di #13087): ultraplan mostra sempre "Background tasks require a git repository. Initialize git or run from a git repository." nonostante repo pubblico con commit, branch di tracking remoto e Claude GitHub App installata. Tutti i check git locali passano (worktree, rev-parse). Mai funzionato per il reporter.
+- **keyword/entità:** GitHub #46883 · background tasks · git repository · GitHub App · duplicato #13087 · macOS
 
 ---
 
 ### GitHub Issue #46386: Ultraplan and Web Quickstart Docs
 - **source_id:** f1e73ea7 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Issue GitHub su documentazione Ultraplan e web quickstart.
-- **keyword/entità:** GitHub · docs · quickstart · web · #46386
+- **sostanza:** Issue GitHub #46386 (documentation, chiusa come completed): segnala che le docs di ultraplan e web-quickstart descrivevano ancora un cloud environment pre-creato come prerequisito, mentre da CC v2.1.101 /ultraplan auto-crea un default environment. Include verifica successiva che conferma RESOLVED: le pagine ora documentano l'auto-creazione e relegano /web-setup a fallback manuale.
+- **keyword/entità:** GitHub #46386 · docs · web-quickstart · cloud environment · auto-create · v2.1.101 · /web-setup
 
 ---
 
 ### claude-code-system-prompts/system — GitHub
 - **source_id:** 51fa063e · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. File system prompt di Ultraplan trapelato su GitHub.
-- **keyword/entità:** GitHub · system prompt · leak · claude-code-system-prompts
+- **sostanza:** File del repo Piebald-AI/claude-code-system-prompts (10.4k stelle) che archivia i system prompt estratti di Claude Code. La pagina recuperata mostra in realtà il contenuto del file system-reminder-ultraplan-mode.md (vedi sotto): istruzioni di scaffolding per la modalità ultraplan, commit v2.1.88 "-1,627 tokens". Indicizzazione GitHub.
+- **keyword/entità:** GitHub · Piebald-AI · system prompt leak · claude-code-system-prompts · v2.1.88
 
 ---
 
 ### claude-code-system-prompts/system-reminder-ultraplan-mode.md — GitHub
 - **source_id:** db8593d6 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. File system-reminder per la modalità Ultraplan trapelato su GitHub.
-- **keyword/entità:** GitHub · system-reminder · Ultraplan mode · leak
+- **sostanza:** Testo effettivo del system-reminder di ultraplan (Piebald-AI, v2.1.88, 34 righe): istruisce a produrre un piano d'implementazione esaustivo via esplorazione multi-agente — usare il Task tool per spawnare agenti paralleli (codice esistente, file da modificare, rischi/edge case), sintetizzare, spawnare un agente di critica, poi chiamare ExitPlanMode. Gestione post-ExitPlanMode: su approvazione implementa e apre PR; su rejection con sentinel "ULTRAPLAN_TELEPORT_LOCAL" NON implementa; su errore dichiara il flusso corrotto. Istruzioni interne da NON divulgare all'utente.
+- **keyword/entità:** system-reminder · ultraplan mode · Task tool · agente critico · ExitPlanMode · ULTRAPLAN_TELEPORT_LOCAL · Piebald-AI
 
 ---
 
 ### r/ClaudeAI: Partial Compaction
 - **source_id:** 4bc7b734 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Thread Reddit su compaction parziale del contesto in Claude Code.
-- **keyword/entità:** Reddit · compaction · context · r/ClaudeAI
+- **sostanza:** Thread r/ClaudeAI che elenca il changelog dei system prompt di CC 2.1.88 (-1627 token): novità "partial compaction" (compattare solo una porzione di conversazione con formato di summary strutturato), prompt PowerShell 5.1, tool Config. Rilevante per Ultraplan: la voce "System Reminder: Ultraplan mode" segnala che ultraplan ora può implementare il piano nella stessa sessione su approvazione e aggiunge un teleport sentinel per riconoscere quando il piano è stato inviato al terminale locale.
+- **keyword/entità:** Reddit · r/ClaudeAI · CC 2.1.88 · partial compaction · system prompt diff · ultraplan teleport sentinel
 
 ---
 
 ### GitHub Issue #44804: 30-Min Timeout Silently Discards Progress
 - **source_id:** c9d1ad0f · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Issue GitHub critico sul bug del 30-min timeout di Ultraplan che scarta silenziosamente il lavoro.
-- **keyword/entità:** GitHub · bug · 30 minuti · timeout · progresso perso · #44804
+- **sostanza:** Issue GitHub #44804 (aperta, Windows, area:cowork): con /ultraplan su analisi complessa multi-step, la sessione viene terminata silenziosamente dopo 30 minuti se l'utente non approva il piano nella UI web — tutto l'output degli agenti (analisi, file generati) va perso e i token sono sprecati, senza alcun warning. Richieste: avviso del timeout, warning a ~5 min residui, persistenza intermedia su disco/branch, o timeout configurabile/esteso. Più utenti confermano (25% token su Max 5x bruciati).
+- **keyword/entità:** GitHub #44804 · 30-min timeout · output perso · token sprecati · nessun warning · Windows · area:cowork
 
 ---
 
 ### Stanford STORM Research Project Website
 - **source_id:** dd183b8f · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Sito ufficiale del progetto di ricerca STORM di Stanford.
-- **keyword/entità:** Stanford · STORM · ricerca · sito ufficiale
+- **sostanza:** Sito ufficiale del progetto STORM (Stanford, paper NAACL 2024 di Shao, Jiang et al.): sistema di scrittura che si concentra sulla fase di pre-writing per generare articoli lunghi e grounded in stile Wikipedia da zero. Modella il pre-writing tramite (1) scoperta di prospettive diverse, (2) simulazione di conversazioni in cui writer con prospettive diverse interrogano un esperto grounded su fonti Internet, (3) curation in outline. Valutato su dataset FreshWiki; +25% organizzazione e +10% ampiezza vs baseline; sfida principale = red herrings, non hallucination.
+- **keyword/entità:** Stanford STORM · NAACL 2024 · pre-writing · perspective-guided question asking · FreshWiki · Co-STORM · red herrings
 
 ---
 
 ### "AI Psychosis" in Context — arXiv
 - **source_id:** 391d88a6 · **tipo:** url
-- **sostanza:** Quota API esaurita al momento della lettura — contenuto non campionato in questa sessione. Paper arXiv su "AI Psychosis" nel contesto dei sistemi LLM.
-- **keyword/entità:** arXiv · AI Psychosis · context · LLM
+- **sostanza:** Paper arXiv (2604.13860) su come la storia conversazionale accumulata modella le risposte degli LLM a credenze deliranti. Testati 5 modelli su 3 livelli di contesto accumulato con la stessa conversazione delirante escalante: si separano in due tier — GPT-4o, Grok 4.1 Fast, Gemini 3 Pro ad alto rischio/bassa sicurezza; Claude Opus 4.5 e GPT-5.2 Instant l'opposto. All'aumentare del contesto i modelli unsafe peggiorano (validano premesse deliranti), i safe attivano interventi più forti. Conclude che il rinforzo delirante è un fallimento di allineamento prevenibile e che valutazioni a contesto breve sottostimano il rischio.
+- **keyword/entità:** arXiv 2604.13860 · AI psychosis · long context · deliri · allineamento · Claude Opus 4.5 · GPT-4o · safety stress test
