@@ -5,7 +5,8 @@
   "gateway": "effa6eb4-61ac-42ac-a214-f1fac080d81b (NotebookLM MCP)",
   "output": "file strutturato nel repo + source finale nel masterIndex1777",
   "total_notebooks": 48,
-  "done": ["eb1f871b", "9b1dafe8", "b152146c", "4d21092b", "dbd1d848", "51efe327"],
+  "done": ["eb1f871b", "9b1dafe8", "b152146c", "4d21092b", "dbd1d848", "51efe327", "42a71b95", "c59171c2", "7f8aa086", "8e2a2294", "6f8dbb0c"],
+  "note": "Subagent wave 1+2 (14 agenti) ha colpito session-limit (reset 3am UTC) e non ha scritto file. Parent (Opus) prosegue a mano + rilancio agenti.",
   "notebooks": [
     {"id": "eb1f871b-d778-4bd6-b2a6-5ca25f6a445e", "title": "masterIndex1777", "sources": 1, "status": "pending"},
     {"id": "9b1dafe8-dce0-448b-a5a8-708bd9757459", "title": "create1777 — fucina, verbali e domande", "sources": 5, "status": "pending"},
