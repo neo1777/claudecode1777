@@ -3,7 +3,20 @@
   "session_date": "2026-06-01",
   "method": "source_get_content (raw completo) per ogni source",
   "gateway": "effa6eb4-61ac-42ac-a214-f1fac080d81b (NotebookLM MCP)",
-  "output": "file strutturato nel repo + source finale nel masterIndex1777",
+  "output": "file strutturato nel repo + 6 source nel masterIndex1777 (CARICATE 2026-06-01)",
+  "masterindex_sync": {
+    "stato": "FATTO — indice completo caricato come 6 text source nel notebook masterIndex1777 (eb1f871b), non sovrascrive il catalogo strutturale (2 source preesistenti).",
+    "source_ids": {
+      "1/6": "359a69fc-b036-475c-8e90-f87514f7d136",
+      "2/6": "9b6188d1-048f-4cc1-b710-40c0232928b4",
+      "3/6": "7b30d9d4-737f-4680-b691-c62017e5f48e",
+      "4/6": "5fd1f9fc-9163-4a97-a6bf-7609a22214ce",
+      "5/6": "cf183ebe-97ea-4ccb-a135-fdf7e30ab21c",
+      "6/6": "04d815d3-3f4a-425e-a282-889b86f1c505"
+    },
+    "nota_ingestione": "file/url upload non possibili (gateway remoto non vede il filesystem del container); unica via = source_type text. Le 975 voci sono split in 6 parti ~95KB. NotebookLM normalizza via i marcatori markdown '###' ma preserva titoli e righe source_id (verificato: conteggi entry coincidono).",
+    "anti_doppione": "se ri-eseguito, NON ricreare: aggiornare/eliminare le 6 source con questi id (source_delete confirm:true) e ricaricare."
+  },
   "total_notebooks": 48,
   "files_present": "48/48 (un file per notebook in notebooks/)",
   "voci_totali": 975,
