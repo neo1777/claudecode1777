@@ -1,5 +1,7 @@
 ## 09fdb39c · Project OSS1777: mapazzone2 — [graphify] · 45 fonti
-<!-- indicizzate: 32/45 · restanti 13: errore source_get_content (quota/rate-limit) -->
+<!-- indicizzate: 45/45 -->
+<!-- batch finale (13 fonti): completato 2026-06-01 -->
+<!-- NB: tutte le fonti del notebook risultano source_type "unknown" lato gateway, anche se nei fatti sono .md (text) o esportazioni claude-share (url) -->
 
 ### 00_guida_costruire_un_project.md
 - **source_id:** 4bed6a56 · **tipo:** text
@@ -162,17 +164,68 @@
 - **keyword/entità:** embedding · RAG · chunk semantici · graphify · Leiden · Louvain · issue #919 · contributo OSS
 
 ---
-<!-- FONTI NON INDICIZZATE (errore source_get_content): 13 su 45 -->
-<!-- 360e18cf · lista-google-search.md -->
-<!-- 31e13167 · lista-raw.md -->
-<!-- abcd27fd · mi serve un registratore, vocale, universale, per(1).md -->
-<!-- b0888a3d · prompt-definitivo-v4.md -->
-<!-- 19f0c96f · prompt-definitivo-v5.1.md -->
-<!-- 110e2979 · prompt-definitivo-v5_2.md -->
-<!-- 6f4390f3 · report-autodiagnosi-sessione.md -->
-<!-- 2bc556b9 · report-inventario-step1.md -->
-<!-- 1dd93ac0 · source: claude-share (unnamed) -->
-<!-- 7b36b04c · source: claude-share (unnamed) -->
-<!-- cef2677c · source: claude-share (unnamed) -->
-<!-- d40face4 · source: claude-share (unnamed) -->
-<!-- 943b0273 · spiegazione_fix_saif_934.md -->
+
+### lista-google-search.md
+- **source_id:** 360e18cf · **tipo:** text
+- **sostanza:** Lista di query per motori di ricerca derivata da `lista-raw.md` (step 2 del prompt-definitivo-v5.1): voci della raw trasformate in frasi corte 2-6 parole, con nomi propri capitalizzati e contesto temporale. Raggruppate per tema (graspologic/clustering, graphify, workflow OSS, analisi di grafi, stack di marzio1777, metodo). Rimossi gli identificatori interni al codice e i termini troppo generici.
+- **keyword/entità:** query motore di ricerca · graspologic Leiden · graphify · workflow OSS · betweenness centrality · marzio1777 · derivata da raw
+
+### lista-raw.md
+- **source_id:** 31e13167 · **tipo:** text
+- **sostanza:** Vocabolario integrale del corpus OSS1777 (v2, step3.0): somma di lista-google-search + lista-embedding, estratto con grep dagli 8 file del corpus e arricchito con gli identificatori reali di `cluster.py` (repo safishamsi/graphify, branch v8). Organizzato in 9 categorie (A-I) dal tool graphify al clustering, al bug/rounding, al workflow GitHub, all'arco #919→#934→#942, al metodo, ai principi, allo stack, alle entità/persone.
+- **keyword/entità:** vocabolario · raw · grep · cluster.py · super-hub · Leiden/Louvain · #919/#934/#942 · accenti · 9 categorie
+
+### mi serve un registratore, vocale, universale, per(1).md
+- **source_id:** abcd27fd · **tipo:** url
+- **sostanza:** Trascrizione di una richiesta utente + risposta AI per una mappa esaustiva dei registratori vocali "sempre attivi" nel 2026: tassonomia di tutte le soluzioni (digitali classici, mini/spy, wearable AI, app smartphone, software meeting, Rewind/Limitless, form factor futuristici), con tabelle per forma/funzioni/prezzo/privacy e una sezione economica CAPEX vs OPEX. Numerose fonti web citate (Plaud, Otter, BOYA, ecc.).
+- **keyword/entità:** registratore vocale · wearable AI · 2026 · tassonomia · privacy SÌ/NO · Plaud · Otter · CAPEX/OPEX · tabella
+
+### prompt-definitivo-v4.md
+- **source_id:** b0888a3d · **tipo:** text
+- **sostanza:** Versione v4 del prompt multi-step per analisi di file allegati con estrazione liste. Incorpora come regole i fix N1-N10 e il principio di ricorsività all'indietro ("senno di poi"): la lista raw non è estrazione una-tantum ma un sedimento che cresce ad ogni step. Tre step (inventario, estrazione liste raw/google/embedding, abbinamento comandi bash), ognuno con sotto-step stepN.0 di rilettura critica obbligatoria.
+- **keyword/entità:** prompt multi-step · v4 · ricorsività · senno di poi · N1-N10 · lista raw · stepN.0 · 3 step
+
+### prompt-definitivo-v5.1.md
+- **source_id:** 19f0c96f · **tipo:** text
+- **sostanza:** Evoluzione v5.1 del prompt multi-step: aggiunge alla v4 l'analisi temporale + stratigrafica del corpus (Concetto C: tempo e file-dentro-file datano il contenuto) e lo Step 4 — dossier ragionato in prosa. Quattro step più il principio delle inferenze etichettate per grado di certezza. Pensato per essere incollato all'inizio di un lavoro di analisi documentale.
+- **keyword/entità:** prompt multi-step · v5.1 · cronologia · stratigrafia · Step 4 dossier · inferenze graduate · 4 step
+
+### prompt-definitivo-v5_2.md
+- **source_id:** 110e2979 · **tipo:** text
+- **sostanza:** Versione v5.2 del prompt multi-step: cinque correzioni da un audit su un'esecuzione reale (N11-N13). La raw è chiarita come vocabolario VERBATIM (i concetti sintetizzati nascono nella lista-embedding, non nella raw); ogni stepN.0 ESEGUE una verifica con output mostrato (N11); "verificato" si qualifica e ogni numero poggia su un comando (N12); un artefatto rivisto va ri-emesso (N13); Step 1 dichiara la calibrazione metodo/taglia del corpus.
+- **keyword/entità:** prompt multi-step · v5.2 · N11-N13 · raw verbatim · verifica eseguita · calibrazione · audit · re-emissione
+
+### report-autodiagnosi-sessione.md
+- **source_id:** 6f4390f3 · **tipo:** text
+- **sostanza:** Auto-audit (n=1) dell'esecuzione del prompt-definitivo-v5.1: i 4 step e 3 sotto-step girati, 7 artefatti consegnati. Registro errori graduati: il difetto sostanziale è la lista-raw conforme alla regola empirica solo al 63% (119/325 voci non verbatim) dichiarata "verificata con grep" in toto. Diagnosi del pattern: "verifica dichiarata oltre la verifica eseguita". Nota sul mismatch metodo/corpus (8 file = apparato sovradimensionato).
+- **keyword/entità:** autodiagnosi · audit n=1 · v5.1 · 7 artefatti · lista-raw 63% · overclaim verifica · stepN.0 rete tardiva · mismatch metodo-corpus
+
+### report-inventario-step1.md
+- **source_id:** 2bc556b9 · **tipo:** text
+- **sostanza:** Output dello Step 1 (inventario, metadati, storia) dell'esecuzione del prompt-definitivo-v5.1 sul corpus OSS1777: 8 file (corpus) + il prompt-strumento, con byte/righe/parole/hash SHA256 per ciascuno. Ricostruisce la cronologia dai timestamp interni (i mtime sono solo l'upload del 22 mag) e la stratigrafia delle tre chat converted-* (madre/gemella verificata con grep). Frequenze grep: graphify 173, skill 64, issue 63, cluster.py 59.
+- **keyword/entità:** Step 1 · inventario · SHA256 · cronologia · stratigrafia · converted-* madre/gemella · frequenze grep · corpus 8 file
+
+### source: claude-share — Mappatura esplorativa Project OSS1777 (→ MAPPA v2/v3)
+- **source_id:** 1dd93ac0 · **tipo:** url
+- **sostanza:** Esportazione (web2md1777) della chat esplorativa-madre del Project OSS1777: la sessione che ha prodotto MAPPA v2 e ha spawnato la gemella blind che produce la v3. Contiene il prompt esplorativo lanciato due volte, l'integrazione di `cluster.py` live scaricato da raw.githubusercontent.com (v8 HEAD), il principio "il file d'archivio è cache, non fonte di verità", e l'evoluzione di PROMPT_esplorativo.md e PROMPT_skill.md.
+- **keyword/entità:** claude-share · chat esplorativa · MAPPA v2/v3 · sessione gemella blind · cluster.py live · archivio=cache · PROMPT_esplorativo
+
+### source: claude-share — ARCHIVIO OSS1777 ricerca (gemella blind → MAPPA v3)
+- **source_id:** 7b36b04c · **tipo:** url
+- **sostanza:** Esportazione (web2md1777) della sessione gemella blind del Project OSS1777, lanciata col PROMPT_esplorativo evoluto (sezioni COME LEGGERE / COSA RESTITUIRE / DOPO LA MAPPA). La chat legge integralmente le due trascrizioni (genesi + 11.841 righe), dichiara onestamente cosa non ha ancora coperto quando lo strumento si interrompe, e produce MAPPA_OSS1777_v3.md (Arco A contributo, B metodo, C skill/kit).
+- **keyword/entità:** claude-share · gemella blind · PROMPT_esplorativo · lettura integrale · onestà metodologica · MAPPA v3 · Arco A/B/C
+
+### source: claude-share — SKILLS Project OSS1777 (valutazione + costruzione contributo-oss)
+- **source_id:** cef2677c · **tipo:** url
+- **sostanza:** Esportazione (web2md1777) della chat dedicata alle skill del Project OSS1777: valutazione che da 5 attività candidate fa sopravvivere una sola skill (`contributo-oss`, issue+PR+maintainer), poi su conferma la costruzione della versione definitiva (SKILL.md + 3 reference + ZIP). Include il fix del limite description a 1024 caratteri (1089→883) e la segnalazione del PAT GitHub in chiaro nell'archivio da revocare.
+- **keyword/entità:** claude-share · skill · contributo-oss · valutazione · 1 skill su 5 · SKILL.md · description 1024 · PAT da revocare
+
+### source: claude-share — Analisi grafo architetturale con graphify (chat-genesi)
+- **source_id:** d40face4 · **tipo:** url
+- **sostanza:** Esportazione (web2md1777) della chat-genesi del Project OSS1777: Neo analizza la sua app `marzio1777` con graphify e ne incolla l'output (1501 nodi, 2200 edges, 147 comunità, 27 hyperedge; god-node useAuth() 42 edges, useRBAC() 32; surprising connections). È la conversazione da cui nasce l'idea del contributo OSS e la frase-seme "non ho mai fatto issue e questa è l'occasione perfetta per imparare". File grande (~102 KB).
+- **keyword/entità:** claude-share · chat-genesi · graphify · marzio1777 · god-node · useAuth/useRBAC · hyperedge · seme contributo OSS
+
+### spiegazione_fix_saif_934.md
+- **source_id:** 943b0273 · **tipo:** text
+- **sostanza:** Spiegazione tecnica (perché prima del come) delle due modifiche con cui il maintainer Saif ha reimplementato il fix #934 nel commit 076e6b7: la riga `out.mkdir(parents=True, exist_ok=True)` spostata 17 righe più su (coesione, invariante di precondizione, simmetria fra codepath), e il regression test in `test_cli_export.py` che riusa gli helper `_make_graph`/`_run` già presenti. Lezione: il costo di un test dipende da cosa il repo regala già.
+- **keyword/entità:** Saif · fix #934 · commit 076e6b7 · mkdir · invariante · regression test · _make_graph/_run · mappa helper prima di stimare

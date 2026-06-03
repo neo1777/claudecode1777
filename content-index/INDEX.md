@@ -8,8 +8,12 @@
 > tag · n. fonti). Questo è il layer di **contenuto**: cosa c'è dentro ogni source.
 > I due layer convivono — questo file **non** sostituisce il catalogo strutturale.
 >
-> **Stato:** job a checkpoint, ripartibile. Avanzamento in `_progress.json`,
-> dettaglio per-notebook in `notebooks/<id-breve>.md`.
+> **Stato (2026-06-01, sessione retry r2rRh):** COMPLETO. Gateway rientrato dal
+> downtime 502; tutti i buchi ritentati e chiusi. **975 voci su 48 notebook**,
+> 963 verificate alla fonte; 12 placeholder = fonti genuinamente irraggiungibili
+> all'origine (Cloudflare/captcha web o contenuto indicizzato rotto). Avanzamento
+> in `_progress.json`, dettaglio per-notebook in `notebooks/<id-breve>.md`,
+> consolidato unico in `CONTENT-INDEX-FULL.md`.
 
 ## Legenda voce
 

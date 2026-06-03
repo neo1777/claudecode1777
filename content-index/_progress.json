@@ -3,19 +3,39 @@
   "session_date": "2026-06-01",
   "method": "source_get_content (raw completo) per ogni source",
   "gateway": "effa6eb4-61ac-42ac-a214-f1fac080d81b (NotebookLM MCP)",
-  "output": "file strutturato nel repo + source finale nel masterIndex1777",
+  "output": "file strutturato nel repo + 6 source nel masterIndex1777 (CARICATE 2026-06-01)",
+  "masterindex_sync": {
+    "stato": "FATTO — indice completo caricato come 6 text source nel notebook masterIndex1777 (eb1f871b), non sovrascrive il catalogo strutturale (2 source preesistenti).",
+    "source_ids": {
+      "1/6": "359a69fc-b036-475c-8e90-f87514f7d136",
+      "2/6": "9b6188d1-048f-4cc1-b710-40c0232928b4",
+      "3/6": "7b30d9d4-737f-4680-b691-c62017e5f48e",
+      "4/6": "5fd1f9fc-9163-4a97-a6bf-7609a22214ce",
+      "5/6": "cf183ebe-97ea-4ccb-a135-fdf7e30ab21c",
+      "6/6": "04d815d3-3f4a-425e-a282-889b86f1c505"
+    },
+    "nota_ingestione": "file/url upload non possibili (gateway remoto non vede il filesystem del container); unica via = source_type text. Le 975 voci sono split in 6 parti ~95KB. NotebookLM normalizza via i marcatori markdown '###' ma preserva titoli e righe source_id (verificato: conteggi entry coincidono).",
+    "anti_doppione": "se ri-eseguito, NON ricreare: aggiornare/eliminare le 6 source con questi id (source_delete confirm:true) e ricaricare."
+  },
   "total_notebooks": 48,
   "files_present": "48/48 (un file per notebook in notebooks/)",
-  "voci_totali": 850,
-  "stato": "copertura quasi completa; buchi residui bloccati dal downtime 502 del gateway NotebookLM (origine Cloudflare giù), ritentabili quando torna su",
-  "retry_quando_gateway_torna": {
-    "regola": "USARE SOLO il gateway NotebookLM (source_get_content). MAI WebFetch/WebSearch: la fonte è il contenuto indicizzato in NotebookLM, non un re-fetch web.",
-    "86e51777-mapazzone3": "22/22 da leggere (file con 0 voci reali)",
-    "09fdb39c-mapazzone2": "13/45 mancanti (32 già lette)",
-    "15779ae3-Ultraplan": "22/50 mancanti — source_id: 2a4a4e76,1f2460d2,0a67ff8b,303f9716,0d925592,287bef16,59dbc380,5988aad3,2ac49eef,8e4a3fe6,13b371e0,870100cd,a5b0faa9,13d03b88,95f58628,f1e73ea7,51fa063e,db8593d6,4bc7b734,c9d1ad0f,dd183b8f,391d88a6",
-    "b1480d25-Dagstuhl": "18/58 mancanti (40 già lette; 18 marcate [non letto: API error])",
-    "5c9588e1-Graphify-Project-Analysis": "13/13 da ri-verificare alla fonte (versione attuale ricostruita da summary, non verificata)",
-    "37bc2e19-PROJECT1777": "da ricontare: l'agente dichiara 94 voci ma grep ^### conta 65 — verificare formattazione/completezza"
+  "voci_totali": 975,
+  "voci_verificate_alla_fonte": 963,
+  "stato": "COMPLETO. Gateway NotebookLM rientrato il 2026-06-01 (sessione retry r2rRh): tutti i buchi del downtime 502 ritentati e chiusi. 963/975 voci lette al raw alla fonte; 12 placeholder residui sono fonti GENUINAMENTE irraggiungibili all'origine (Cloudflare/captcha web, o contenuto NotebookLM rotto), non flakiness gateway.",
+  "retry_sessione_2026-06-01_r2rRh": {
+    "regola": "USARE SOLO il gateway NotebookLM (source_get_content). MAI WebFetch/WebSearch: la fonte è il contenuto indicizzato in NotebookLM.",
+    "86e51777-mapazzone3": "RISOLTO — 22/22 lette",
+    "09fdb39c-mapazzone2": "RISOLTO — 45/45 lette",
+    "15779ae3-Ultraplan": "RISOLTO — 50/50 (42 reali + 8 placeholder: fonti web bloccate all'origine da Cloudflare 1020/reCAPTCHA/404, non gateway)",
+    "b1480d25-Dagstuhl": "RISOLTO — 56/58 (2 placeholder: 29fe5017 Memoriki, 98e5121e Starmorph — contenuto indicizzato rotto, error persistente su 3 retry)",
+    "5c9588e1-Graphify-Project-Analysis": "RISOLTO — 13/13 ri-verificato alla fonte; la versione precedente era interamente errata (titoli inventati), riscritta da zero",
+    "37bc2e19-PROJECT1777": "RISOLTO — 94/94 (la versione precedente aveva ~39 placeholder con id finti; 68 fonti lette davvero; 2 placeholder: 866260ad UUID malformato, 5c8ca3ca API error persistente)"
+  },
+  "placeholder_residui_irraggiungibili": {
+    "totale": 12,
+    "15779ae3-Ultraplan": "8 (3 ResearchGate Cloudflare 1020, Midway/ResearchGate 1020, PMC reCAPTCHA, Product Hunt Cloudflare, OSINT Arcadia 404, STORM Agent Pattern)",
+    "b1480d25-Dagstuhl": "2 (29fe5017 Memoriki, 98e5121e Starmorph)",
+    "37bc2e19-PROJECT1777": "2 (866260ad Graphify-Karpathy-Saif-Neo UUID malformato, 5c8ca3ca Framework Architettura Conoscenza)"
   },
   "note_storiche": "Subagent wave 1 (session-limit, reset 3am UTC) a vuoto. Wave 2 (12 agenti) ha coperto la maggior parte. Retry serializzati dal parent per i buchi da rate-limit; poi il gateway è andato in 502 persistente.",
   "notebooks": [
